@@ -1,0 +1,135 @@
+/* Reset and Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #f6f7fb; /* Soft background */
+    color: #333;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container */
+.main-con {
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    color: #0d6efd;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.converter-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input and Conversion Boxes */
+.input-box, .conversion-box, .output-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #094bc1;
+}
+
+/* Result Box */
+.result-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-con {
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.95rem;
+    }
+
+    input, select {
+        font-size: 0.95rem;
+    }
+
+    .result-box {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading { 
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    input, select {
+        font-size: 0.9rem;
+    }
+
+    .result-box {
+        font-size: 0.9rem;
+    }
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="main-con">
+        <h2 class="heading">
+            <i class="fas fa-temperature-high"></i> Temperature Converter
+        </h2>
+        <div class="converter-box">
+            <!-- Input Section -->
+            <div class="input-box">
+                <label for="Temperature">
+                    <i class="fas fa-thermometer-half"></i> Enter Temperature
+                </label>
+                <input type="text" id="Temperature" placeholder="Enter Temperature">
+                <select name="Temperature" id="unit">
+                    <option value="C">🌡️ Celsius</option>
+                    <option value="F">🔥 Fahrenheit</option>
+                    <option value="K">⚗️ Kelvin</option>
+                </select>
+            </div>
+
+            <!-- Conversion Section -->
+            <div class="conversion-box">
+                <label for="conversion">
+                    <i class="fas fa-sync-alt"></i> Convert to:
+                </label>
+                <select name="Temperature" id="convert-to-unit">
+                    <option value="C">🌡️ Celsius</option>
+                    <option value="F">🔥 Fahrenheit</option>
+                    <option value="K">⚗️ Kelvin</option>
+                </select>
+                <button>
+                    <i class="fas fa-arrow-right"></i> Convert
+                </button>
+            </div>
+
+            <!-- Output Section -->
+            <div class="output-box">
+                <label for="result">
+                    <i class="fas fa-clipboard-list"></i> Result
+                </label>
+                <div class="result-box" id="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
